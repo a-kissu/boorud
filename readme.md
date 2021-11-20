@@ -9,7 +9,9 @@ Simple program to download images from safebooru through commandline.
 Simply execute ``boorud`` in your terminal(after adding it to your path) and input whatever it asks. Simple, isn't?
 
 <h3> Requirements </h3>
-- python3
+
+- [python3](https://www.python.org/downloads/)
+- requests (`pip3 install requests`)
 
 <hr>
 
