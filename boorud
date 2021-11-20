@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+
+import safebooru as sb
+
+def main():
+    tags = input('Enter tags you want to search for(separated by comma) : ')
+
+    try:
+        post_limit = int(input('Enter number of posts to retrieve : '))
+    except:
+        print('Invalid input.')
+    else:
+        def init_tags(tags):
+            return (tags.strip()).replace(', ', '+').replace(' ', '_').lower()
+
+        tags = init_tags(tags)
+
+        client = sb.safebooru(limit=post_limit, tags=tags)
+        post = client.get_posts()
+        if post:
+            client.save_images()
+            # pass
+        else:
+            print('Uh oh! Can\'t find any posts related to your input tags')
+
+
+if __name__ == '__main__':
+    main()
