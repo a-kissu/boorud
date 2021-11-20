@@ -4,7 +4,7 @@
 
 <h3> About </h3>
 
-Simple program to download images from safebooru through commandline.
+Simple program to download images from safebooru through command line.
 
 Simply execute ``boorud`` in your terminal(after adding it to your path) and input whatever it asks. Simple, isn't?
 
