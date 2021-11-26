@@ -1,6 +1,5 @@
 import requests, json
 import os
-from requests.api import request
 
 class safebooru:
     def __init__(self, limit=100, tags=''):
