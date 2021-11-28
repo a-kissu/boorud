@@ -47,7 +47,7 @@ class safebooru:
                 print('Error while trying to access the image.')
             else:
                 # saving/writing the image
-                path_to_save = os.getcwd() + '/' + self.save_path + '/' + image_name
+                path_to_save = os.path.join(os.getcwd(), self.save_path, image_name)
                 try:
                     with open(path_to_save, 'wb') as handler:
                         handler.write(image_data)
