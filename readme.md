@@ -6,8 +6,6 @@
 
 Simple program to download images from safebooru through command line.
 
-Simply execute ``boorud`` in your terminal(after adding it to your path) and input whatever it asks. Simple, isn't?
-
 <h3> Requirements </h3>
 
 - [python3](https://www.python.org/downloads/)
@@ -19,5 +17,5 @@ Simply execute ``boorud`` in your terminal(after adding it to your path) and inp
 
 - [ ] Add support for more sites.
 - [ ] GUI
-- [ ] Use command line arguments for input
+- [x] Use command line arguments for input
 - [ ] Add support to save more info about the post like sources, tags etc.

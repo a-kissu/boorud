@@ -2,7 +2,7 @@ import requests, json
 import os
 
 class safebooru:
-    def __init__(self, limit=100, tags=''):
+    def __init__(self, limit, tags=''):
         self.save_path = tags
         self.limit = f'limit={limit}'
         self.tags = f'tags={tags}'
