@@ -24,6 +24,6 @@ def main():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Downloading images from safebooru.', add_help=True)
-    parser.add_argument('--tags', type=str, help='Tags to search for (multipletags go between \'\' separated by ,)')
+    parser.add_argument('--tags', required=True, type=str, help='Tags to search for (multipletags go between \'\' separated by ,)')
     parser.add_argument('--posts', type=int, default=100, help='Number of posts to download')
     main()
